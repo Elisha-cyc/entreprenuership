@@ -1,1255 +1,1885 @@
 const questions = [
   {
-    type: "multiple_choice",
-    question: "What concept is often referred to as the '4 Ps'?",
-    options: [
+    "type": "multiple_choice",
+    "question": "What concept is often referred to as the '4 Ps'?",
+    "options": [
       "Financial Situation",
       "Marketing Mix",
       "Company Policies",
       "Organizational Structure"
     ],
-    answer: "Marketing Mix",
-    citation: "13"
+    "answer": "Marketing Mix",
+    "citation": "73"
   },
   {
-    type: "riddle",
-    question: "I am a set of controllable tactical marketing tools. I blend Product, Price, Place, and Promotion to get a desired response. What am I?",
-    answer: "The Marketing Mix",
-    citation: "13"
+    "type": "multiple_choice",
+    "question": "I am a set of controllable tactical marketing tools. I blend Product, Price, Place, and Promotion to get a desired response. What am I?",
+    "options": [
+      "The Marketing Strategy",
+      "The Marketing Mix",
+      "The Business Plan",
+      "The Market Research"
+    ],
+    "answer": "The Marketing Mix",
+    "citation": "73"
   },
   {
-    type: "true_false",
-    question: "The 4 Ps of the marketing mix are Product, Price, People, and Promotion.",
-    answer: false,
-    explanation: "The 4 Ps are Product, Price, Place (Distribution), and Promotion.",
-    citation: "13"
+    "type": "multiple_choice",
+    "question": "The 4 Ps of the marketing mix are Product, Price, People, and Promotion. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "The 4 Ps are Product, Price, Place (Distribution), and Promotion.",
+    "citation": "73"
   },
   {
-    type: "fill_in_the_blank",
-    question: "The marketing mix includes Product, Price, Place, and _________.",
-    answer: "Promotion",
-    citation: "13"
+    "type": "multiple_choice",
+    "question": "The marketing mix includes Product, Price, Place, and _________.",
+    "options": [
+      "People",
+      "Processes",
+      "Promotion",
+      "Perception"
+    ],
+    "answer": "Promotion",
+    "citation": "73"
   },
   {
-    type: "multiple_choice",
-    question: "Which of the following is considered an internal factor affecting the marketing mix?",
-    options: [
+    "type": "multiple_choice",
+    "question": "Which of the following is considered an internal factor affecting the marketing mix?",
+    "options": [
       "Economic Conditions",
       "Company Objectives/Goals",
       "Technological Advances",
       "Competition"
     ],
-    answer: "Company Objectives/Goals",
-    citation: "15, 16"
+    "answer": "Company Objectives/Goals",
+    "citation": "75, 76"
   },
   {
-    type: "riddle",
-    question: "I am a target that a company aims to achieve, like market leadership or profit. I influence the marketing mix. What am I?",
-    answer: "Company Objectives/Goals",
-    citation: "16"
+    "type": "multiple_choice",
+    "question": "I am a target that a company aims to achieve, like market leadership or profit. I influence the marketing mix. What am I?",
+    "options": [
+      "Customer Behavior",
+      "Company Objectives/Goals",
+      "Market Trends",
+      "Supplier Reliability"
+    ],
+    "answer": "Company Objectives/Goals",
+    "citation": "76"
   },
   {
-    type: "true_false",
-    question: "Company objectives/goals are external factors affecting the marketing mix.",
-    answer: false,
-    explanation: "Company objectives/goals are internal factors.",
-    citation: "15, 16"
+    "type": "multiple_choice",
+    "question": "Company objectives/goals are external factors affecting the marketing mix. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "Company objectives/goals are internal factors.",
+    "citation": "75, 76"
   },
   {
-    type: "fill_in_the_blank",
-    question: "Internal rules and guidelines that impact marketing decisions are known as Company _________.",
-    answer: "Policies",
-    citation: "18"
+    "type": "multiple_choice",
+    "question": "Internal rules and guidelines that impact marketing decisions are known as Company _________.",
+    "options": [
+      "Strategies",
+      "Policies",
+      "Structures",
+      "Cultures"
+    ],
+    "answer": "Policies",
+    "citation": "78"
   },
   {
-    type: "multiple_choice",
-    question: "What internal factor can influence product features, pricing, and promotional messages through rules like return policies or ethical standards?",
-    options: [
+    "type": "multiple_choice",
+    "question": "What internal factor can influence product features, pricing, and promotional messages through rules like return policies or ethical standards?",
+    "options": [
       "Human Resources/Capabilities",
       "Organizational Structure",
       "Company Policies",
       "Production Capacity and Technology"
     ],
-    answer: "Company Policies",
-    citation: "19"
+    "answer": "Company Policies",
+    "citation": "79"
   },
   {
-    type: "riddle",
-    question: "I am an internal rulebook, guiding decisions on customer service and ethics, impacting your product and price. What am I?",
-    answer: "Company Policies",
-    citation: "18, 19"
+    "type": "multiple_choice",
+    "question": "I am an internal rulebook, guiding decisions on customer service and ethics, impacting your product and price. What am I?",
+    "options": [
+      "Company Vision",
+      "Company Policies",
+      "Company Mission",
+      "Company Values"
+    ],
+    "answer": "Company Policies",
+    "citation": "78, 79"
   },
   {
-    type: "true_false",
-    question: "Customer service policies are an example of an internal factor affecting the marketing mix.",
-    answer: true,
-    citation: "19"
+    "type": "multiple_choice",
+    "question": "Customer service policies are an example of an internal factor affecting the marketing mix. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True",
+    "citation": "79"
   },
   {
-    type: "fill_in_the_blank",
-    question: "The budget available for marketing activities is referred to as Financial Situation/_________.",
-    answer: "Resources",
-    citation: "20"
+    "type": "multiple_choice",
+    "question": "The budget available for marketing activities is referred to as Financial Situation/_________.",
+    "options": [
+      "Assets",
+      "Capital",
+      "Resources",
+      "Expenditure"
+    ],
+    "answer": "Resources",
+    "citation": "80"
   },
   {
-    type: "multiple_choice",
-    question: "Limited resources in a company might lead to what kind of marketing mix?",
-    options: [
+    "type": "multiple_choice",
+    "question": "Limited resources in a company might lead to what kind of marketing mix?",
+    "options": [
       "Aggressive and broad",
       "Untargeted and expensive",
       "More targeted and cost-effective",
       "Premium and exclusive"
     ],
-    answer: "More targeted and cost-effective",
-    citation: "21"
+    "answer": "More targeted and cost-effective",
+    "citation": "81"
   },
   {
-    type: "riddle",
-    question: "I am your marketing budget. When I am small, you must be smart and focused. What am I?",
-    answer: "Financial Situation/Resources",
-    citation: "20, 21"
+    "type": "multiple_choice",
+    "question": "I am your marketing budget. When I am small, you must be smart and focused. What am I?",
+    "options": [
+      "Financial Situation/Resources",
+      "Production Capacity",
+      "Human Resources",
+      "Company Culture"
+    ],
+    "answer": "Financial Situation/Resources",
+    "citation": "80, 81"
   },
   {
-    type: "true_false",
-    question: "Financial situation/resources only influence product development, not promotional campaigns.",
-    answer: false,
-    explanation: "Financial situation/resources influence product development, promotional campaigns, distribution networks, and pricing flexibility.",
-    citation: "20"
+    "type": "multiple_choice",
+    "question": "Financial situation/resources only influence product development, not promotional campaigns. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "Financial situation/resources influence product development, promotional campaigns, distribution networks, and pricing flexibility.",
+    "citation": "80"
   },
   {
-    type: "fill_in_the_blank",
-    question: "The skills and experience of marketing staff and sales teams are part of Human Resources/_________.",
-    answer: "Capabilities",
-    citation: "22"
+    "type": "multiple_choice",
+    "question": "The skills and experience of marketing staff and sales teams are part of Human Resources/_________.",
+    "options": [
+      "Management",
+      "Assets",
+      "Capabilities",
+      "Departments"
+    ],
+    "answer": "Capabilities",
+    "citation": "82"
   },
   {
-    type: "multiple_choice",
-    question: "Which internal factor directly impacts the execution of marketing strategies through the skills and experience of personnel?",
-    options: [
+    "type": "multiple_choice",
+    "question": "Which internal factor directly impacts the execution of marketing strategies through the skills and experience of personnel?",
+    "options": [
       "Company Culture",
       "Human Resources/Capabilities",
       "Organizational Structure",
       "Production Capacity and Technology"
     ],
-    answer: "Human Resources/Capabilities",
-    citation: "22"
+    "answer": "Human Resources/Capabilities",
+    "citation": "82"
   },
   {
-    type: "riddle",
-    question: "I am the talent within your company, from your sales team to product developers. I help execute your marketing. What am I?",
-    answer: "Human Resources/Capabilities",
-    citation: "22, 23"
+    "type": "multiple_choice",
+    "question": "I am the talent within your company, from your sales team to product developers. I help execute your marketing. What am I?",
+    "options": [
+      "Financial Situation",
+      "Human Resources/Capabilities",
+      "Company Policies",
+      "Organizational Structure"
+    ],
+    "answer": "Human Resources/Capabilities",
+    "citation": "82, 83"
   },
   {
-    type: "true_false",
-    question: "A strong sales team can enhance promotion and distribution.",
-    answer: true,
-    citation: "23"
+    "type": "multiple_choice",
+    "question": "A strong sales team can enhance promotion and distribution. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True",
+    "citation": "83"
   },
   {
-    type: "fill_in_the_blank",
-    question: "How a company is organized can affect communication and decision-making regarding the marketing mix, this is called Organizational _________.",
-    answer: "Structure",
-    citation: "24"
+    "type": "multiple_choice",
+    "question": "How a company is organized can affect communication and decision-making regarding the marketing mix, this is called Organizational _________.",
+    "options": [
+      "Hierarchy",
+      "System",
+      "Structure",
+      "Framework"
+    ],
+    "answer": "Structure",
+    "citation": "84"
   },
   {
-    type: "multiple_choice",
-    question: "A flat organizational structure might allow for what regarding the marketing mix?",
-    options: [
+    "type": "multiple_choice",
+    "question": "A flat organizational structure might allow for what regarding the marketing mix?",
+    "options": [
       "Slower but more consistent adaptation",
       "Quicker adaptation",
       "Limited decision-making",
       "Strict adherence to hierarchy"
     ],
-    answer: "Quicker adaptation",
-    citation: "25"
+    "answer": "Quicker adaptation",
+    "citation": "85"
   },
   {
-    type: "riddle",
-    question: "I am the blueprint of your company, dictating how fast or slow decisions are made about your products and prices. What am I?",
-    answer: "Organizational Structure",
-    citation: "24, 25"
+    "type": "multiple_choice",
+    "question": "I am the blueprint of your company, dictating how fast or slow decisions are made about your products and prices. What am I?",
+    "options": [
+      "Company Culture",
+      "Organizational Structure",
+      "Company Objectives",
+      "Financial Resources"
+    ],
+    "answer": "Organizational Structure",
+    "citation": "84, 85"
   },
   {
-    type: "true_false",
-    question: "A hierarchical organizational structure typically allows for quicker adaptation than a flat structure.",
-    answer: false,
-    explanation: "A flat structure might allow for quicker adaptation, while a hierarchical one might be slower but more consistent.",
-    citation: "25"
+    "type": "multiple_choice",
+    "question": "A hierarchical organizational structure typically allows for quicker adaptation than a flat structure. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "A flat structure might allow for quicker adaptation, while a hierarchical one might be slower but more consistent.",
+    "citation": "85"
   },
   {
-    type: "fill_in_the_blank",
-    question: "The ability to produce products and the efficiency of production processes fall under Production Capacity and _________.",
-    answer: "Technology",
-    citation: "26"
+    "type": "multiple_choice",
+    "question": "The ability to produce products and the efficiency of production processes fall under Production Capacity and _________.",
+    "options": [
+      "Innovation",
+      "Quality",
+      "Technology",
+      "Output"
+    ],
+    "answer": "Technology",
+    "citation": "86"
   },
   {
-    type: "multiple_choice",
-    question: "Which internal factor influences product features, quality, and even pricing due to production costs?",
-    options: [
+    "type": "multiple_choice",
+    "question": "Which internal factor influences product features, quality, and even pricing due to production costs?",
+    "options": [
       "Company Culture",
       "Company Objectives/Goals",
       "Production Capacity and Technology",
       "Financial Situation/Resources"
     ],
-    answer: "Production Capacity and Technology",
-    citation: "26"
+    "answer": "Production Capacity and Technology",
+    "citation": "86"
   },
   {
-    type: "riddle",
-    question: "I dictate how much you can make and how well you make it, even affecting your price tag. What am I?",
-    answer: "Production Capacity and Technology",
-    citation: "26"
+    "type": "multiple_choice",
+    "question": "I dictate how much you can make and how well you make it, even affecting your price tag. What am I?",
+    "options": [
+      "Human Resources",
+      "Company Policies",
+      "Production Capacity and Technology",
+      "Organizational Structure"
+    ],
+    "answer": "Production Capacity and Technology",
+    "citation": "86"
   },
   {
-    type: "true_false",
-    question: "Production capacity only impacts product features, not quality or pricing.",
-    answer: false,
-    explanation: "Production capacity and technology influence product features, quality, and even pricing (due to production costs).",
-    citation: "26"
+    "type": "multiple_choice",
+    "question": "Production capacity only impacts product features, not quality or pricing. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "Production capacity and technology influence product features, quality, and even pricing (due to production costs).",
+    "citation": "86"
   },
   {
-    type: "fill_in_the_blank",
-    question: "The values and norms of the organization that impact how marketing is approached is called Company _________.",
-    answer: "Culture",
-    citation: "27"
+    "type": "multiple_choice",
+    "question": "The values and norms of the organization that impact how marketing is approached is called Company _________.",
+    "options": [
+      "Vision",
+      "Mission",
+      "Culture",
+      "Goals"
+    ],
+    "answer": "Culture",
+    "citation": "87"
   },
   {
-    type: "multiple_choice",
-    question: "A customer-centric company culture will naturally prioritize what in the marketing mix?",
-    options: [
+    "type": "multiple_choice",
+    "question": "A customer-centric company culture will naturally prioritize what in the marketing mix?",
+    "options": [
       "Profit maximization",
       "Competitor analysis",
       "Customer needs",
       "Aggressive promotion"
     ],
-    answer: "Customer needs",
-    citation: "28"
+    "answer": "Customer needs",
+    "citation": "88"
   },
   {
-    type: "riddle",
-    question: "I am the soul of your company, guiding how you treat your customers and approach your marketing. What am I?",
-    answer: "Company Culture",
-    citation: "27, 28"
+    "type": "multiple_choice",
+    "question": "I am the soul of your company, guiding how you treat your customers and approach your marketing. What am I?",
+    "options": [
+      "Company Policies",
+      "Organizational Structure",
+      "Company Culture",
+      "Financial Situation"
+    ],
+    "answer": "Company Culture",
+    "citation": "87, 88"
   },
   {
-    type: "true_false",
-    question: "A customer-centric culture focuses on competitor analysis more than customer needs.",
-    answer: false,
-    explanation: "A customer-centric culture will naturally prioritize customer needs in the marketing mix.",
-    citation: "28"
+    "type": "multiple_choice",
+    "question": "A customer-centric culture focuses on competitor analysis more than customer needs. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "A customer-centric culture will naturally prioritize customer needs in the marketing mix.",
+    "citation": "88"
   },
   {
-    type: "multiple_choice",
-    question: "Which of the following is an external factor affecting the marketing mix?",
-    options: [
+    "type": "multiple_choice",
+    "question": "Which of the following is an external factor affecting the marketing mix?",
+    "options": [
       "Company Policies",
       "Production Capacity and Technology",
       "Customer Attitudes and Behavior",
       "Organizational Structure"
     ],
-    answer: "Customer Attitudes and Behavior",
-    citation: "30, 33"
+    "answer": "Customer Attitudes and Behavior",
+    "citation": "90, 93"
   },
   {
-    type: "riddle",
-    question: "I am outside your control, representing the feelings and buying habits of your target market. I change your product design. What am I?",
-    answer: "Customer Attitudes and Behavior",
-    citation: "33, 34"
+    "type": "multiple_choice",
+    "question": "I am outside your control, representing the feelings and buying habits of your target market. I change your product design. What am I?",
+    "options": [
+      "Economic Conditions",
+      "Technological Advances",
+      "Customer Attitudes and Behavior",
+      "Social and Cultural Factors"
+    ],
+    "answer": "Customer Attitudes and Behavior",
+    "citation": "93, 94"
   },
   {
-    type: "true_false",
-    question: "External factors affecting the marketing mix are controllable by the organization.",
-    answer: false,
-    explanation: "External factors are uncontrollable by the organization.",
-    citation: "30, 31"
+    "type": "multiple_choice",
+    "question": "External factors affecting the marketing mix are controllable by the organization. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "External factors are uncontrollable by the organization.",
+    "citation": "90, 91"
   },
   {
-    type: "fill_in_the_blank",
-    question: "Individual feelings, opinions, purchasing habits, needs, and preferences of the target market are known as Customer Attitudes and _________.",
-    answer: "Behavior",
-    citation: "33"
+    "type": "multiple_choice",
+    "question": "Individual feelings, opinions, purchasing habits, needs, and preferences of the target market are known as Customer Attitudes and _________.",
+    "options": [
+      "Demographics",
+      "Trends",
+      "Behavior",
+      "Perceptions"
+    ],
+    "answer": "Behavior",
+    "citation": "93"
   },
   {
-    type: "multiple_choice",
-    question: "Changes in consumer tastes, trends, and buying power directly influence what aspects of the marketing mix?",
-    options: [
+    "type": "multiple_choice",
+    "question": "Changes in consumer tastes, trends, and buying power directly influence what aspects of the marketing mix?",
+    "options": [
       "Organizational structure and company culture",
       "Financial resources and human capabilities",
       "Product design, pricing strategies, distribution channels, and promotional messaging",
       "Production capacity and technology"
     ],
-    answer: "Product design, pricing strategies, distribution channels, and promotional messaging",
-    citation: "34"
+    "answer": "Product design, pricing strategies, distribution channels, and promotional messaging",
+    "citation": "94"
   },
   {
-    type: "fill_in_the_blank",
-    question: "Inflation, interest rates, and unemployment rates are examples of Economic _________.",
-    answer: "Conditions",
-    citation: "35"
+    "type": "multiple_choice",
+    "question": "Inflation, interest rates, and unemployment rates are examples of Economic _________.",
+    "options": [
+      "Policies",
+      "Indicators",
+      "Conditions",
+      "Trends"
+    ],
+    "answer": "Conditions",
+    "citation": "95"
   },
   {
-    type: "riddle",
-    question: "I represent the economy, dictating if consumers have more or less to spend, influencing your prices. What am I?",
-    answer: "Economic Conditions",
-    citation: "35, 36"
+    "type": "multiple_choice",
+    "question": "I represent the economy, dictating if consumers have more or less to spend, influencing your prices. What am I?",
+    "options": [
+      "Political and Legal Forces",
+      "Technological Advances",
+      "Economic Conditions",
+      "Social and Cultural Factors"
+    ],
+    "answer": "Economic Conditions",
+    "citation": "95, 96"
   },
   {
-    type: "true_false",
-    question: "During an economic downturn, companies are likely to increase prices.",
-    answer: false,
-    explanation: "During an economic downturn, consumers may have less spending power, leading companies to lower prices or offer more value-oriented products.",
-    citation: "36"
+    "type": "multiple_choice",
+    "question": "During an economic downturn, companies are likely to increase prices. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "During an economic downturn, consumers may have less spending power, leading companies to lower prices or offer more value-oriented products.",
+    "citation": "96"
   },
   {
-    type: "multiple_choice",
-    question: "What external factor can lead to new product innovations, more efficient production, and new distribution channels like e-commerce?",
-    options: [
+    "type": "multiple_choice",
+    "question": "What external factor can lead to new product innovations, more efficient production, and new distribution channels like e-commerce?",
+    "options": [
       "Natural/Environmental Forces",
       "Social and Cultural Factors",
       "Technological Advances",
       "Political and Legal Forces"
     ],
-    answer: "Technological Advances",
-    citation: "37, 38"
+    "answer": "Technological Advances",
+    "citation": "97, 98"
   },
   {
-    type: "riddle",
-    question: "I bring new innovations, from e-commerce to AI marketing. I can change how you make and promote your products. What am I?",
-    answer: "Technological Advances",
-    citation: "37, 38"
+    "type": "multiple_choice",
+    "question": "I bring new innovations, from e-commerce to AI marketing. I can change how you make and promote your products. What am I?",
+    "options": [
+      "Competition",
+      "Suppliers and Marketing Intermediaries",
+      "Technological Advances",
+      "Customer Attitudes and Behavior"
+    ],
+    "answer": "Technological Advances",
+    "citation": "97, 98"
   },
   {
-    type: "true_false",
-    question: "Technological advances only impact new product innovations, not distribution channels.",
-    answer: false,
-    explanation: "New technologies can lead to new product innovations, more efficient production methods, new distribution channels (e.g., e-commerce), and new ways to promote products.",
-    citation: "38"
+    "type": "multiple_choice",
+    "question": "Technological advances only impact new product innovations, not distribution channels. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "New technologies can lead to new product innovations, more efficient production methods, new distribution channels (e.g., e-commerce), and new ways to promote products.",
+    "citation": "98"
   },
   {
-    type: "fill_in_the_blank",
-    question: "Government regulations, laws, and political stability are categorized as Political and _________ Forces.",
-    answer: "Legal",
-    citation: "39"
+    "type": "multiple_choice",
+    "question": "Government regulations, laws, and political stability are categorized as Political and _________ Forces.",
+    "options": [
+      "Economic",
+      "Social",
+      "Legal",
+      "Environmental"
+    ],
+    "answer": "Legal",
+    "citation": "99"
   },
   {
-    type: "multiple_choice",
-    question: "Which external force includes health and safety regulations, product labeling requirements, and consumer protection laws?",
-    options: [
+    "type": "multiple_choice",
+    "question": "Which external force includes health and safety regulations, product labeling requirements, and consumer protection laws?",
+    "options": [
       "Economic Conditions",
       "Political and Legal Forces",
       "Competition",
       "Suppliers and Marketing Intermediaries"
     ],
-    answer: "Political and Legal Forces",
-    citation: "39, 40"
+    "answer": "Political and Legal Forces",
+    "citation": "99, 100"
   },
   {
-    type: "riddle",
-    question: "I am the law of the land, dictating what you can put on your labels and how you advertise. What am I?",
-    answer: "Political and Legal Forces",
-    citation: "39, 40"
+    "type": "multiple_choice",
+    "question": "I am the law of the land, dictating what you can put on your labels and how you advertise. What am I?",
+    "options": [
+      "Economic Conditions",
+      "Political and Legal Forces",
+      "Social and Cultural Factors",
+      "Natural/Environmental Forces"
+    ],
+    "answer": "Political and Legal Forces",
+    "citation": "99, 100"
   },
   {
-    type: "true_false",
-    question: "Advertising standards are an example of an economic condition affecting the marketing mix.",
-    answer: false,
-    explanation: "Advertising standards are part of Political and Legal Forces.",
-    citation: "40"
+    "type": "multiple_choice",
+    "question": "Advertising standards are an example of an economic condition affecting the marketing mix. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "Advertising standards are part of Political and Legal Forces.",
+    "citation": "100"
   },
   {
-    type: "fill_in_the_blank",
-    question: "Climate change, natural disasters, and resource availability are examples of Natural/Environmental _________.",
-    answer: "Forces",
-    citation: "41"
+    "type": "multiple_choice",
+    "question": "Climate change, natural disasters, and resource availability are examples of Natural/Environmental _________.",
+    "options": [
+      "Policies",
+      "Factors",
+      "Conditions",
+      "Forces"
+    ],
+    "answer": "Forces",
+    "citation": "101"
   },
   {
-    type: "multiple_choice",
-    question: "What external factor can impact supply chains, production costs, and consumer preferences for eco-friendly products?",
-    options: [
+    "type": "multiple_choice",
+    "question": "What external factor can impact supply chains, production costs, and consumer preferences for eco-friendly products?",
+    "options": [
       "Customer Attitudes and Behavior",
       "Social and Cultural Factors",
       "Natural/Environmental Forces",
       "Technological Advances"
     ],
-    answer: "Natural/Environmental Forces",
-    citation: "41, 42"
+    "answer": "Natural/Environmental Forces",
+    "citation": "101, 102"
   },
   {
-    type: "riddle",
-    question: "I am the weather and the planet's health, affecting your supply chain and consumer demand for green products. What am I?",
-    answer: "Natural/Environmental Forces",
-    citation: "41, 42"
+    "type": "multiple_choice",
+    "question": "I am the weather and the planet's health, affecting your supply chain and consumer demand for green products. What am I?",
+    "options": [
+      "Economic Conditions",
+      "Political and Legal Forces",
+      "Natural/Environmental Forces",
+      "Social and Cultural Factors"
+    ],
+    "answer": "Natural/Environmental Forces",
+    "citation": "101, 102"
   },
   {
-    type: "true_false",
-    question: "Environmental concerns are an internal factor affecting the marketing mix.",
-    answer: false,
-    explanation: "Environmental concerns are part of Natural/Environmental Forces, which are external.",
-    citation: "41"
+    "type": "multiple_choice",
+    "question": "Environmental concerns are an internal factor affecting the marketing mix. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "Environmental concerns are part of Natural/Environmental Forces, which are external.",
+    "citation": "101"
   },
   {
-    type: "fill_in_the_blank",
-    question: "The actions of competitors heavily influence a company's marketing mix, which is simply referred to as _________.",
-    answer: "Competition",
-    citation: "43"
+    "type": "multiple_choice",
+    "question": "The actions of competitors heavily influence a company's marketing mix, which is simply referred to as _________.",
+    "options": [
+      "Partnerships",
+      "Regulation",
+      "Competition",
+      "Collaboration"
+    ],
+    "answer": "Competition",
+    "citation": "103"
   },
   {
-    type: "multiple_choice",
-    question: "Businesses must constantly analyze competitors to gain what?",
-    options: [
+    "type": "multiple_choice",
+    "question": "Businesses must constantly analyze competitors to gain what?",
+    "options": [
       "Internal control",
       "Competitive advantage",
       "Financial stability",
       "Organizational restructuring"
     ],
-    answer: "Competitive advantage",
-    citation: "44"
+    "answer": "Competitive advantage",
+    "citation": "104"
   },
   {
-    type: "riddle",
-    question: "I am the other players in the game, launching new products and setting prices, forcing you to adjust your strategy. What am I?",
-    answer: "Competition",
-    citation: "43, 44"
+    "type": "multiple_choice",
+    "question": "I am the other players in the game, launching new products and setting prices, forcing you to adjust your strategy. What am I?",
+    "options": [
+      "Customers",
+      "Suppliers",
+      "Competition",
+      "Regulators"
+    ],
+    "answer": "Competition",
+    "citation": "103, 104"
   },
   {
-    type: "true_false",
-    question: "Competitor actions do not influence a company's marketing mix.",
-    answer: false,
-    explanation: "The actions of competitors heavily influence a company's marketing mix.",
-    citation: "43"
+    "type": "multiple_choice",
+    "question": "Competitor actions do not influence a company's marketing mix. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "The actions of competitors heavily influence a company's marketing mix.",
+    "citation": "103"
   },
   {
-    type: "fill_in_the_blank",
-    question: "Demographics, lifestyle trends, cultural norms, and societal attitudes are covered by Social and _________ Factors.",
-    answer: "Cultural",
-    citation: "45"
+    "type": "multiple_choice",
+    "question": "Demographics, lifestyle trends, cultural norms, and societal attitudes are covered by Social and _________ Factors.",
+    "options": [
+      "Economic",
+      "Political",
+      "Cultural",
+      "Technological"
+    ],
+    "answer": "Cultural",
+    "citation": "105"
   },
   {
-    type: "multiple_choice",
-    question: "What external factor might lead to new product offerings and promotional messages emphasizing health benefits?",
-    options: [
+    "type": "multiple_choice",
+    "question": "What external factor might lead to new product offerings and promotional messages emphasizing health benefits?",
+    "options": [
       "Economic Conditions",
       "Technological Advances",
       "Social and Cultural Factors",
       "Political and Legal Forces"
     ],
-    answer: "Social and Cultural Factors",
-    citation: "46"
+    "answer": "Social and Cultural Factors",
+    "citation": "106"
   },
   {
-    type: "riddle",
-    question: "I am the pulse of society, reflecting age, gender, and trends, influencing your product messages. What am I?",
-    answer: "Social and Cultural Factors",
-    citation: "45, 46"
+    "type": "multiple_choice",
+    "question": "I am the pulse of society, reflecting age, gender, and trends, influencing your product messages. What am I?",
+    "options": [
+      "Economic Conditions",
+      "Natural/Environmental Forces",
+      "Social and Cultural Factors",
+      "Competition"
+    ],
+    "answer": "Social and Cultural Factors",
+    "citation": "105, 106"
   },
   {
-    type: "true_false",
-    question: "A growing health-conscious trend is an example of an economic condition.",
-    answer: false,
-    explanation: "A growing health-conscious trend is an example of a Social and Cultural Factor.",
-    citation: "46"
+    "type": "multiple_choice",
+    "question": "A growing health-conscious trend is an example of an economic condition. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "A growing health-conscious trend is an example of a Social and Cultural Factor.",
+    "citation": "106"
   },
   {
-    type: "fill_in_the_blank",
-    question: "The availability, cost, and reliability of raw materials come from Suppliers and Marketing _________.",
-    answer: "Intermediaries",
-    citation: "47"
+    "type": "multiple_choice",
+    "question": "The availability, cost, and reliability of raw materials come from Suppliers and Marketing _________.",
+    "options": [
+      "Partners",
+      "Channels",
+      "Intermediaries",
+      "Networks"
+    ],
+    "answer": "Intermediaries",
+    "citation": "107"
   },
   {
-    type: "multiple_choice",
-    question: "Which external factor directly affects product quality, production costs, and distribution efficiency?",
-    options: [
+    "type": "multiple_choice",
+    "question": "Which external factor directly affects product quality, production costs, and distribution efficiency?",
+    "options": [
       "Company Objectives/Goals",
       "Human Resources/Capabilities",
       "Suppliers and Marketing Intermediaries",
       "Organizational Structure"
     ],
-    answer: "Suppliers and Marketing Intermediaries",
-    citation: "47"
+    "answer": "Suppliers and Marketing Intermediaries",
+    "citation": "107"
   },
   {
-    type: "riddle",
-    question: "I am your source for raw materials and the path to your customers, influencing your costs and availability. What am I?",
-    answer: "Suppliers and Marketing Intermediaries",
-    citation: "47"
+    "type": "multiple_choice",
+    "question": "I am your source for raw materials and the path to your customers, influencing your costs and availability. What am I?",
+    "options": [
+      "Economic Conditions",
+      "Technological Advances",
+      "Suppliers and Marketing Intermediaries",
+      "Political and Legal Forces"
+    ],
+    "answer": "Suppliers and Marketing Intermediaries",
+    "citation": "107"
   },
   {
-    type: "true_false",
-    question: "The reliability of suppliers does not affect product availability.",
-    answer: false,
-    explanation: "The availability, cost, and reliability of suppliers and marketing intermediaries directly affect product quality, production costs, distribution efficiency, and ultimately, product availability and price.",
-    citation: "47"
+    "type": "multiple_choice",
+    "question": "The reliability of suppliers does not affect product availability. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "The availability, cost, and reliability of suppliers and marketing intermediaries directly affect product quality, production costs, distribution efficiency, and ultimately, product availability and price.",
+    "citation": "107"
   },
   {
-    type: "multiple_choice",
-    question: "What is a benefit of a well-managed marketing mix?",
-    options: [
+    "type": "multiple_choice",
+    "question": "What is a benefit of a well-managed marketing mix?",
+    "options": [
       "Decreased sales forecasting accuracy",
       "Limited adaptability to market changes",
       "Achieving Business Objectives",
       "Poor communication within the organization"
     ],
-    answer: "Achieving Business Objectives",
-    citation: "48, 51"
+    "answer": "Achieving Business Objectives",
+    "citation": "108, 111"
   },
   {
-    type: "riddle",
-    question: "I help you hit your sales targets and gain market share by aligning your P's. What am I?",
-    answer: "Achieving Business Objectives",
-    citation: "48"
+    "type": "multiple_choice",
+    "question": "I help you hit your sales targets and gain market share by aligning your P's. What am I?",
+    "options": [
+      "Optimizing Resource Allocation",
+      "Achieving Business Objectives",
+      "Meeting Customer Needs",
+      "Gaining Competitive Advantage"
+    ],
+    "answer": "Achieving Business Objectives",
+    "citation": "108"
   },
   {
-    type: "true_false",
-    question: "A well-managed marketing mix helps companies achieve objectives like increasing sales and market share.",
-    answer: true,
-    citation: "48"
+    "type": "multiple_choice",
+    "question": "A well-managed marketing mix helps companies achieve objectives like increasing sales and market share. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True",
+    "citation": "108"
   },
   {
-    type: "fill_in_the_blank",
-    question: "A well-designed marketing mix ensures that the product or service effectively meets customer _________ and preferences.",
-    answer: "needs",
-    citation: "49"
+    "type": "multiple_choice",
+    "question": "A well-designed marketing mix ensures that the product or service effectively meets customer _________ and preferences.",
+    "options": [
+      "demands",
+      "needs",
+      "expectations",
+      "satisfaction"
+    ],
+    "answer": "needs",
+    "citation": "109"
   },
   {
-    type: "multiple_choice",
-    question: "What benefit of a well-managed marketing mix ensures the product is priced appropriately and readily available where customers want it?",
-    options: [
+    "type": "multiple_choice",
+    "question": "What benefit of a well-managed marketing mix ensures the product is priced appropriately and readily available where customers want it?",
+    "options": [
       "Gaining Competitive Advantage",
       "Meeting Customer Needs",
       "Optimizing Resource Allocation",
       "Improved Decision-Making"
     ],
-    answer: "Meeting Customer Needs",
-    citation: "49"
+    "answer": "Meeting Customer Needs",
+    "citation": "109"
   },
   {
-    type: "riddle",
-    question: "I ensure your product fits your customer's desires and is available right when they need it. What am I?",
-    answer: "Meeting Customer Needs",
-    citation: "49"
+    "type": "multiple_choice",
+    "question": "I ensure your product fits your customer's desires and is available right when they need it. What am I?",
+    "options": [
+      "Achieving Business Objectives",
+      "Meeting Customer Needs",
+      "Enhanced Brand Image",
+      "Better Sales Forecasting"
+    ],
+    "answer": "Meeting Customer Needs",
+    "citation": "109"
   },
   {
-    type: "true_false",
-    question: "Meeting customer needs is not a benefit of a well-managed marketing mix.",
-    answer: false,
-    explanation: "Meeting Customer Needs is a benefit of a well-managed marketing mix.",
-    citation: "49"
+    "type": "multiple_choice",
+    "question": "Meeting customer needs is not a benefit of a well-managed marketing mix. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "Meeting Customer Needs is a benefit of a well-managed marketing mix.",
+    "citation": "109"
   },
   {
-    type: "fill_in_the_blank",
-    question: "Differentiating its offering, optimizing pricing, and establishing efficient distribution helps a company gain Competitive _________.",
-    answer: "Advantage",
-    citation: "50"
+    "type": "multiple_choice",
+    "question": "Differentiating its offering, optimizing pricing, and establishing efficient distribution helps a company gain Competitive _________.",
+    "options": [
+      "Edge",
+      "Power",
+      "Advantage",
+      "Position"
+    ],
+    "answer": "Advantage",
+    "citation": "110"
   },
   {
-    type: "multiple_choice",
-    question: "By standing out from competitors and attracting more customers, a company benefits from what?",
-    options: [
+    "type": "multiple_choice",
+    "question": "By standing out from competitors and attracting more customers, a company benefits from what?",
+    "options": [
       "Enhanced Brand Image and Reputation",
       "Better Sales Forecasting and Revenue Generation",
       "Gaining Competitive Advantage",
       "Clear Communication and Coordination"
     ],
-    answer: "Gaining Competitive Advantage",
-    citation: "50"
+    "answer": "Gaining Competitive Advantage",
+    "citation": "110"
   },
   {
-    type: "riddle",
-    question: "I am what you achieve when you stand out from the crowd with your unique offerings and smart pricing. What am I?",
-    answer: "Gaining Competitive Advantage",
-    citation: "50"
+    "type": "multiple_choice",
+    "question": "I am what you achieve when you stand out from the crowd with your unique offerings and smart pricing. What am I?",
+    "options": [
+      "Market Share",
+      "Competitive Advantage",
+      "Customer Loyalty",
+      "Brand Recognition"
+    ],
+    "answer": "Gaining Competitive Advantage",
+    "citation": "110"
   },
   {
-    type: "true_false",
-    question: "Optimizing pricing helps a company gain a competitive advantage.",
-    answer: true,
-    citation: "50"
+    "type": "multiple_choice",
+    "question": "Optimizing pricing helps a company gain a competitive advantage. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True",
+    "citation": "110"
   },
   {
-    type: "fill_in_the_blank",
-    question: "A clear marketing mix strategy helps businesses allocate their marketing budget and resources efficiently across different activities, known as Optimizing Resource _________.",
-    answer: "Allocation",
-    citation: "52"
+    "type": "multiple_choice",
+    "question": "A clear marketing mix strategy helps businesses allocate their marketing budget and resources efficiently across different activities, known as Optimizing Resource _________.",
+    "options": [
+      "Management",
+      "Utilization",
+      "Allocation",
+      "Control"
+    ],
+    "answer": "Allocation",
+    "citation": "112"
   },
   {
-    type: "multiple_choice",
-    question: "Which benefit of a well-managed marketing mix helps businesses focus their budget and resources on what yields the best results?",
-    options: [
+    "type": "multiple_choice",
+    "question": "Which benefit of a well-managed marketing mix helps businesses focus their budget and resources on what yields the best results?",
+    "options": [
       "Achieving Business Objectives",
       "Meeting Customer Needs",
       "Optimizing Resource Allocation",
       "Improved Decision-Making"
     ],
-    answer: "Optimizing Resource Allocation",
-    citation: "52"
+    "answer": "Optimizing Resource Allocation",
+    "citation": "112"
   },
   {
-    type: "riddle",
-    question: "I help you spend your money wisely and use your time efficiently, ensuring you get the most bang for your buck. What am I?",
-    answer: "Optimizing Resource Allocation",
-    citation: "52"
+    "type": "multiple_choice",
+    "question": "I help you spend your money wisely and use your time efficiently, ensuring you get the most bang for your buck. What am I?",
+    "options": [
+      "Improved Decision-Making",
+      "Optimizing Resource Allocation",
+      "Adaptability to Market Changes",
+      "Clear Communication"
+    ],
+    "answer": "Optimizing Resource Allocation",
+    "citation": "112"
   },
   {
-    type: "true_false",
-    question: "Optimizing resource allocation means inefficiently distributing marketing budgets.",
-    answer: false,
-    explanation: "Optimizing resource allocation means allocating marketing budgets and resources efficiently.",
-    citation: "52"
+    "type": "multiple_choice",
+    "question": "Optimizing resource allocation means inefficiently distributing marketing budgets. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "Optimizing resource allocation means allocating marketing budgets and resources efficiently.",
+    "citation": "112"
   },
   {
-    type: "fill_in_the_blank",
-    question: "The marketing mix framework provides a structured approach for making informed decisions, leading to Improved _________.",
-    answer: "Decision-Making",
-    citation: "53"
+    "type": "multiple_choice",
+    "question": "The marketing mix framework provides a structured approach for making informed decisions, leading to Improved _________.",
+    "options": [
+      "Profits",
+      "Sales",
+      "Decision-Making",
+      "Efficiency"
+    ],
+    "answer": "Decision-Making",
+    "citation": "113"
   },
   {
-    type: "multiple_choice",
-    question: "What benefit of the marketing mix provides a structured approach for informed decisions about product development and pricing?",
-    options: [
+    "type": "multiple_choice",
+    "question": "What benefit of the marketing mix provides a structured approach for informed decisions about product development and pricing?",
+    "options": [
       "Gaining Competitive Advantage",
       "Enhanced Brand Image and Reputation",
       "Improved Decision-Making",
       "Better Sales Forecasting and Revenue Generation"
     ],
-    answer: "Improved Decision-Making",
-    citation: "53"
+    "answer": "Improved Decision-Making",
+    "citation": "113"
   },
   {
-    type: "riddle",
-    question: "I am the blueprint for smart choices, guiding you in product, price, and promotion. What am I?",
-    answer: "Improved Decision-Making",
-    citation: "53"
+    "type": "multiple_choice",
+    "question": "I am the blueprint for smart choices, guiding you in product, price, and promotion. What am I?",
+    "options": [
+      "Organizational Structure",
+      "Company Policies",
+      "Improved Decision-Making",
+      "Human Resources"
+    ],
+    "answer": "Improved Decision-Making",
+    "citation": "113"
   },
   {
-    type: "true_false",
-    question: "The marketing mix framework hinders informed decision-making.",
-    answer: false,
-    explanation: "The framework of the marketing mix provides a structured approach for making informed decisions.",
-    citation: "53"
+    "type": "multiple_choice",
+    "question": "The marketing mix framework hinders informed decision-making. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "The framework of the marketing mix provides a structured approach for making informed decisions.",
+    "citation": "113"
   },
   {
-    type: "fill_in_the_blank",
-    question: "A consistent and well-executed marketing mix contributes to a strong brand identity and positive _________ in the market.",
-    answer: "reputation",
-    citation: "54"
+    "type": "multiple_choice",
+    "question": "A consistent and well-executed marketing mix contributes to a strong brand identity and positive _________ in the market.",
+    "options": [
+      "presence",
+      "recognition",
+      "reputation",
+      "image"
+    ],
+    "answer": "reputation",
+    "citation": "114"
   },
   {
-    type: "multiple_choice",
-    question: "Which benefit of the marketing mix builds trust and loyalty among customers?",
-    options: [
+    "type": "multiple_choice",
+    "question": "Which benefit of the marketing mix builds trust and loyalty among customers?",
+    "options": [
       "Optimizing Resource Allocation",
       "Enhanced Brand Image and Reputation",
       "Adaptability to Market Changes",
       "Clear Communication and Coordination"
     ],
-    answer: "Enhanced Brand Image and Reputation",
-    citation: "54, 55"
+    "answer": "Enhanced Brand Image and Reputation",
+    "citation": "114, 115"
   },
   {
-    type: "riddle",
-    question: "I am the positive perception customers have of your company, building trust and loyalty. What am I?",
-    answer: "Enhanced Brand Image and Reputation",
-    citation: "54, 55"
+    "type": "multiple_choice",
+    "question": "I am the positive perception customers have of your company, building trust and loyalty. What am I?",
+    "options": [
+      "Customer Satisfaction",
+      "Market Share",
+      "Enhanced Brand Image and Reputation",
+      "Competitive Advantage"
+    ],
+    "answer": "Enhanced Brand Image and Reputation",
+    "citation": "114, 115"
   },
   {
-    type: "true_false",
-    question: "A poorly executed marketing mix enhances brand image.",
-    answer: false,
-    explanation: "A consistent and well-executed marketing mix contributes to a strong brand identity and positive reputation.",
-    citation: "54"
+    "type": "multiple_choice",
+    "question": "A poorly executed marketing mix enhances brand image. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "A consistent and well-executed marketing mix contributes to a strong brand identity and positive reputation.",
+    "citation": "114"
   },
   {
-    type: "fill_in_the_blank",
-    question: "Understanding how different elements of the marketing mix impact sales leads to Better Sales Forecasting and Revenue _________.",
-    answer: "Generation",
-    citation: "56"
+    "type": "multiple_choice",
+    "question": "Understanding how different elements of the marketing mix impact sales leads to Better Sales Forecasting and Revenue _________.",
+    "options": [
+      "Growth",
+      "Increase",
+      "Generation",
+      "Maximization"
+    ],
+    "answer": "Generation",
+    "citation": "116"
   },
   {
-    type: "multiple_choice",
-    question: "What benefit allows businesses to make more accurate sales forecasts and develop strategies to maximize revenue?",
-    options: [
+    "type": "multiple_choice",
+    "question": "What benefit allows businesses to make more accurate sales forecasts and develop strategies to maximize revenue?",
+    "options": [
       "Achieving Business Objectives",
       "Better Sales Forecasting and Revenue Generation",
       "Meeting Customer Needs",
       "Gaining Competitive Advantage"
     ],
-    answer: "Better Sales Forecasting and Revenue Generation",
-    citation: "56"
+    "answer": "Better Sales Forecasting and Revenue Generation",
+    "citation": "116"
   },
   {
-    type: "riddle",
-    question: "I help you predict your future sales and find ways to make more money. What am I?",
-    answer: "Better Sales Forecasting and Revenue Generation",
-    citation: "56"
+    "type": "multiple_choice",
+    "question": "I help you predict your future sales and find ways to make more money. What am I?",
+    "options": [
+      "Optimizing Resource Allocation",
+      "Improved Decision-Making",
+      "Better Sales Forecasting and Revenue Generation",
+      "Adaptability to Market Changes"
+    ],
+    "answer": "Better Sales Forecasting and Revenue Generation",
+    "citation": "116"
   },
   {
-    type: "true_false",
-    question: "The marketing mix helps in making more accurate sales forecasts.",
-    answer: true,
-    citation: "56"
+    "type": "multiple_choice",
+    "question": "The marketing mix helps in making more accurate sales forecasts. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True",
+    "citation": "116"
   },
   {
-    type: "fill_in_the_blank",
-    question: "Regularly reviewing and adjusting the marketing mix in response to internal and external factors ensures long-term _________.",
-    answer: "sustainability",
-    citation: "57"
+    "type": "multiple_choice",
+    "question": "Regularly reviewing and adjusting the marketing mix in response to internal and external factors ensures long-term _________.",
+    "options": [
+      "stability",
+      "profitability",
+      "sustainability",
+      "growth"
+    ],
+    "answer": "sustainability",
+    "citation": "117"
   },
   {
-    type: "multiple_choice",
-    question: "Which benefit ensures businesses remain agile and responsive to evolving market conditions?",
-    options: [
+    "type": "multiple_choice",
+    "question": "Which benefit ensures businesses remain agile and responsive to evolving market conditions?",
+    "options": [
       "Optimizing Resource Allocation",
       "Improved Decision-Making",
       "Adaptability to Market Changes",
       "Enhanced Brand Image and Reputation"
     ],
-    answer: "Adaptability to Market Changes",
-    citation: "57"
+    "answer": "Adaptability to Market Changes",
+    "citation": "117"
   },
   {
-    type: "riddle",
-    question: "I keep you flexible and responsive, letting you change course when the market shifts. What am I?",
-    answer: "Adaptability to Market Changes",
-    citation: "57"
+    "type": "multiple_choice",
+    "question": "I keep you flexible and responsive, letting you change course when the market shifts. What am I?",
+    "options": [
+      "Clear Communication and Coordination",
+      "Achieving Business Objectives",
+      "Adaptability to Market Changes (by reviewing and adjusting the marketing mix)",
+      "Meeting Customer Needs"
+    ],
+    "answer": "Adaptability to Market Changes (by reviewing and adjusting the marketing mix)",
+    "citation": "117"
   },
   {
-    type: "true_false",
-    question: "The marketing mix is a static concept and does not need to be adjusted.",
-    answer: false,
-    explanation: "The marketing mix is not a static concept but a dynamic tool that must be constantly evaluated and adjusted.",
-    citation: "59, 60"
+    "type": "multiple_choice",
+    "question": "The marketing mix is a static concept and does not need to be adjusted. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "The marketing mix is not a static concept but a dynamic tool that must be constantly evaluated and adjusted.",
+    "citation": "119, 120"
   },
   {
-    type: "fill_in_the_blank",
-    question: "The marketing mix provides a common language and framework for different departments to coordinate their efforts, leading to Clear Communication and _________.",
-    answer: "Coordination",
-    citation: "58"
+    "type": "multiple_choice",
+    "question": "The marketing mix provides a common language and framework for different departments to coordinate their efforts, leading to Clear Communication and _________.",
+    "options": [
+      "Efficiency",
+      "Synergy",
+      "Coordination",
+      "Integration"
+    ],
+    "answer": "Coordination",
+    "citation": "118"
   },
   {
-    type: "multiple_choice",
-    question: "What benefit helps departments like R&D, production, sales, and marketing work together towards shared goals?",
-    options: [
+    "type": "multiple_choice",
+    "question": "What benefit helps departments like R&D, production, sales, and marketing work together towards shared goals?",
+    "options": [
       "Better Sales Forecasting and Revenue Generation",
       "Adaptability to Market Changes",
       "Clear Communication and Coordination",
       "Achieving Business Objectives"
     ],
-    answer: "Clear Communication and Coordination",
-    citation: "58"
+    "answer": "Clear Communication and Coordination",
+    "citation": "118"
   },
   {
-    type: "riddle",
-    question: "I ensure everyone in your company is on the same page, speaking the same marketing language. What am I?",
-    answer: "Clear Communication and Coordination",
-    citation: "58"
+    "type": "multiple_choice",
+    "question": "I ensure everyone in your company is on the same page, speaking the same marketing language. What am I?",
+    "options": [
+      "Organizational Structure",
+      "Company Policies",
+      "Clear Communication and Coordination",
+      "Company Culture"
+    ],
+    "answer": "Clear Communication and Coordination",
+    "citation": "118"
   },
   {
-    type: "true_false",
-    question: "The marketing mix helps different departments coordinate their efforts.",
-    answer: true,
-    citation: "58"
+    "type": "multiple_choice",
+    "question": "The marketing mix helps different departments coordinate their efforts. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True",
+    "citation": "118"
   },
   {
-    type: "multiple_choice",
-    question: "Who is one of the members of Group One mentioned in the presentation?",
-    options: [
+    "type": "multiple_choice",
+    "question": "Who is one of the members of Group One mentioned in the presentation?",
+    "options": [
       "John Doe",
       "Garfield Nana Agyekum",
       "Jane Smith",
       "Robert Johnson"
     ],
-    answer: "Garfield Nana Agyekum",
-    citation: "3"
+    "answer": "Garfield Nana Agyekum",
+    "citation": "63"
   },
   {
-    type: "true_false",
-    question: "Matthew Opare Danso is a member of Group One.",
-    answer: true,
-    citation: "4"
+    "type": "multiple_choice",
+    "question": "Matthew Opare Danso is a member of Group One. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True",
+    "citation": "64"
   },
   {
-    type: "fill_in_the_blank",
-    question: "Ziyaad _________ is listed as a member of Group One.",
-    answer: "Labaran",
-    citation: "5"
+    "type": "multiple_choice",
+    "question": "Ziyaad _________ is listed as a member of Group One.",
+    "options": [
+      "Kofi",
+      "Mensah",
+      "Labaran",
+      "Osei"
+    ],
+    "answer": "Labaran",
+    "citation": "65"
   },
   {
-    type: "multiple_choice",
-    question: "Which of the following individuals is NOT listed as a member of Group One?",
-    options: [
+    "type": "multiple_choice",
+    "question": "Which of the following individuals is NOT listed as a member of Group One?",
+    "options": [
       "Aida Yussif Zaare",
       "Gabriel Nyantakyi",
       "Raymond O. Adu-Danso",
       "Emily White"
     ],
-    answer: "Emily White",
-    citation: "6, 7, 8"
+    "answer": "Emily White",
+    "citation": "66, 67, 68"
   },
   {
-    type: "riddle",
-    question: "I am one of the names in Group One, starting with 'Aida'. Who am I?",
-    answer: "Aida Yussif Zaare",
-    citation: "6"
+    "type": "multiple_choice",
+    "question": "I am one of the names in Group One, starting with 'Aida'. Who am I?",
+    "options": [
+      "Aida Mensah",
+      "Aida Kwame",
+      "Aida Yussif Zaare",
+      "Aida Boateng"
+    ],
+    "answer": "Aida Yussif Zaare",
+    "citation": "66"
   },
   {
-    type: "true_false",
-    question: "Gabriel Nyantakyi is a member of Group One.",
-    answer: true,
-    citation: "7"
+    "type": "multiple_choice",
+    "question": "Gabriel Nyantakyi is a member of Group One. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True",
+    "citation": "67"
   },
   {
-    type: "fill_in_the_blank",
-    question: "Raymond O. _________ is a member of Group One.",
-    answer: "Adu-Danso",
-    citation: "8"
+    "type": "multiple_choice",
+    "question": "Raymond O. _________ is a member of Group One.",
+    "options": [
+      "Danso",
+      "Adu-Danso",
+      "Agyekum",
+      "Opare"
+    ],
+    "answer": "Adu-Danso",
+    "citation": "68"
   },
   {
-    type: "multiple_choice",
-    question: "The presentation is about what subject?",
-    options: [
+    "type": "multiple_choice",
+    "question": "The presentation is about what subject?",
+    "options": [
       "Finance",
       "Entrepreneurship",
       "Human Resources",
       "Production Management"
     ],
-    answer: "Entrepreneurship",
-    citation: "1"
+    "answer": "Entrepreneurship",
+    "citation": "61"
   },
   {
-    type: "true_false",
-    question: "The presentation discusses only internal factors affecting the marketing mix.",
-    answer: false,
-    explanation: "The presentation discusses both internal and external factors affecting the marketing mix.",
-    citation: "14, 15, 29, 30"
+    "type": "multiple_choice",
+    "question": "The presentation discusses only internal factors affecting the marketing mix. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "The presentation discusses both internal and external factors affecting the marketing mix.",
+    "citation": "74, 75, 89, 90"
   },
   {
-    type: "fill_in_the_blank",
-    question: "The marketing mix is a fundamental concept in _________.",
-    answer: "marketing",
-    citation: "13"
+    "type": "multiple_choice",
+    "question": "The marketing mix is a fundamental concept in _________.",
+    "options": [
+      "finance",
+      "management",
+      "marketing",
+      "accounting"
+    ],
+    "answer": "marketing",
+    "citation": "73"
   },
   {
-    type: "multiple_choice",
-    question: "What is the primary purpose of the marketing mix?",
-    options: [
+    "type": "multiple_choice",
+    "question": "What is the primary purpose of the marketing mix?",
+    "options": [
       "To control employee benefits",
       "To produce the response a company wants in the target market",
       "To solely focus on profit maximization",
       "To ignore external market changes"
     ],
-    answer: "To produce the response a company wants in the target market",
-    citation: "13"
+    "answer": "To produce the response a company wants in the target market",
+    "citation": "73"
   },
   {
-    type: "riddle",
-    question: "I am a core idea in marketing, a blend of controllable tools to get a desired reaction from customers. What am I?",
-    answer: "The Marketing Mix",
-    citation: "13"
+    "type": "multiple_choice",
+    "question": "I am a core idea in marketing, a blend of controllable tools to get a desired reaction from customers. What am I?",
+    "options": [
+      "The Business Model",
+      "The Marketing Mix",
+      "The Sales Strategy",
+      "The Product Strategy"
+    ],
+    "answer": "The Marketing Mix",
+    "citation": "73"
   },
   {
-    type: "true_false",
-    question: "The marketing mix consists of uncontrollable tactical marketing tools.",
-    answer: false,
-    explanation: "The marketing mix consists of controllable tactical marketing tools.",
-    citation: "13"
+    "type": "multiple_choice",
+    "question": "The marketing mix consists of uncontrollable tactical marketing tools. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "The marketing mix consists of controllable tactical marketing tools.",
+    "citation": "73"
   },
   {
-    type: "fill_in_the_blank",
-    question: "The marketing mix elements are Product, Price, Place, and _________.",
-    answer: "Promotion",
-    citation: "13"
+    "type": "multiple_choice",
+    "question": "The marketing mix elements are Product, Price, Place, and _________.",
+    "options": [
+      "People",
+      "Packaging",
+      "Promotion",
+      "Profit"
+    ],
+    "answer": "Promotion",
+    "citation": "73"
   },
   {
-    type: "multiple_choice",
-    question: "Which of the following is an example of a company policy that could impact marketing decisions?",
-    options: [
+    "type": "multiple_choice",
+    "question": "Which of the following is an example of a company policy that could impact marketing decisions?",
+    "options": [
       "Competitor pricing strategies",
       "Customer return policies",
       "Inflation rates",
       "Technological advancements"
     ],
-    answer: "Customer return policies",
-    citation: "19"
+    "answer": "Customer return policies",
+    "citation": "79"
   },
   {
-    type: "riddle",
-    question: "I am an internal rule, like how you handle customer returns, and I can shape your product's appeal. What am I?",
-    answer: "Company Policy",
-    citation: "18, 19"
+    "type": "multiple_choice",
+    "question": "I am an internal rule, like how you handle customer returns, and I can shape your product's appeal. What am I?",
+    "options": [
+      "Company Objective",
+      "Company Policy",
+      "Company Culture",
+      "Organizational Structure"
+    ],
+    "answer": "Company Policy",
+    "citation": "78, 79"
   },
   {
-    type: "true_false",
-    question: "Limited financial resources typically lead to a more extensive marketing mix.",
-    answer: false,
-    explanation: "Limited resources might lead to a more targeted and cost-effective marketing mix.",
-    citation: "21"
+    "type": "multiple_choice",
+    "question": "Limited financial resources typically lead to a more extensive marketing mix. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "Limited resources might lead to a more targeted and cost-effective marketing mix.",
+    "citation": "81"
   },
   {
-    type: "fill_in_the_blank",
-    question: "The skills and experience of marketing staff are categorized under Human Resources/_________.",
-    answer: "Capabilities",
-    citation: "22"
+    "type": "multiple_choice",
+    "question": "The skills and experience of marketing staff are categorized under Human Resources/_________.",
+    "options": [
+      "Training",
+      "Development",
+      "Capabilities",
+      "Management"
+    ],
+    "answer": "Capabilities",
+    "citation": "82"
   },
   {
-    type: "multiple_choice",
-    question: "How does a skilled product development team influence the marketing mix?",
-    options: [
+    "type": "multiple_choice",
+    "question": "How does a skilled product development team influence the marketing mix?",
+    "options": [
       "By lowering interest rates",
       "By creating innovative products",
       "By increasing competition",
       "By influencing government regulations"
     ],
-    answer: "By creating innovative products",
-    citation: "23"
+    "answer": "By creating innovative products",
+    "citation": "83"
   },
   {
-    type: "riddle",
-    question: "I am the collective talent that designs new offerings, making your product stand out. Who am I?",
-    answer: "Skilled Product Development Team (part of Human Resources/Capabilities)",
-    citation: "23"
+    "type": "multiple_choice",
+    "question": "I am the collective talent that designs new offerings, making your product stand out. Who am I?",
+    "options": [
+      "Skilled Sales Team",
+      "Skilled Product Development Team (part of Human Resources/Capabilities)",
+      "Financial Analysts",
+      "Marketing Researchers"
+    ],
+    "answer": "Skilled Product Development Team (part of Human Resources/Capabilities)",
+    "citation": "83"
   },
   {
-    type: "true_false",
-    question: "A flat organizational structure generally results in slower adaptation to market changes.",
-    answer: false,
-    explanation: "A flat structure might allow for quicker adaptation.",
-    citation: "25"
+    "type": "multiple_choice",
+    "question": "A flat organizational structure generally results in slower adaptation to market changes. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "A flat structure might allow for quicker adaptation.",
+    "citation": "85"
   },
   {
-    type: "fill_in_the_blank",
-    question: "The efficiency of production processes is an aspect of Production Capacity and _________.",
-    answer: "Technology",
-    citation: "26"
+    "type": "multiple_choice",
+    "question": "The efficiency of production processes is an aspect of Production Capacity and _________.",
+    "options": [
+      "Management",
+      "Costs",
+      "Technology",
+      "Volume"
+    ],
+    "answer": "Technology",
+    "citation": "86"
   },
   {
-    type: "multiple_choice",
-    question: "What is an example of how company culture can affect the marketing mix?",
-    options: [
+    "type": "multiple_choice",
+    "question": "What is an example of how company culture can affect the marketing mix?",
+    "options": [
       "Ignoring customer feedback",
       "Prioritizing customer needs in the marketing mix",
       "Focusing solely on competitor analysis",
       "Disregarding ethical standards"
     ],
-    answer: "Prioritizing customer needs in the marketing mix",
-    citation: "28"
+    "answer": "Prioritizing customer needs in the marketing mix",
+    "citation": "88"
   },
   {
-    type: "riddle",
-    question: "I am the moral compass of your business, guiding whether you put customers first in your marketing efforts. What am I?",
-    answer: "Company Culture",
-    citation: "27, 28"
+    "type": "multiple_choice",
+    "question": "I am the moral compass of your business, guiding whether you put customers first in your marketing efforts. What am I?",
+    "options": [
+      "Company Policies",
+      "Company Culture",
+      "Company Objectives",
+      "Organizational Structure"
+    ],
+    "answer": "Company Culture",
+    "citation": "87, 88"
   },
   {
-    type: "true_false",
-    question: "Customer attitudes and behavior are internal factors.",
-    answer: false,
-    explanation: "Customer attitudes and behavior are external factors.",
-    citation: "30, 33"
+    "type": "multiple_choice",
+    "question": "Customer attitudes and behavior are internal factors. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "Customer attitudes and behavior are external factors.",
+    "citation": "90, 93"
   },
   {
-    type: "fill_in_the_blank",
-    question: "Economic conditions include factors like inflation, interest rates, and unemployment _________.",
-    answer: "rates",
-    citation: "35"
+    "type": "multiple_choice",
+    "question": "Economic conditions include factors like inflation, interest rates, and unemployment _________.",
+    "options": [
+      "levels",
+      "statistics",
+      "rates",
+      "trends"
+    ],
+    "answer": "rates",
+    "citation": "95"
   },
   {
-    type: "multiple_choice",
-    question: "During an economic recession, what might companies do with their pricing strategies?",
-    options: [
+    "type": "multiple_choice",
+    "question": "During an economic recession, what might companies do with their pricing strategies?",
+    "options": [
       "Increase prices significantly",
       "Maintain premium pricing",
       "Lower prices or offer more value-oriented products",
       "Ignore pricing adjustments"
     ],
-    answer: "Lower prices or offer more value-oriented products",
-    citation: "36"
+    "answer": "Lower prices or offer more value-oriented products",
+    "citation": "96"
   },
   {
-    type: "riddle",
-    question: "I am the financial climate, and when I turn cold, companies often make their products more affordable. What am I?",
-    answer: "Economic Conditions",
-    citation: "35, 36"
+    "type": "multiple_choice",
+    "question": "I am the financial climate, and when I turn cold, companies often make their products more affordable. What am I?",
+    "options": [
+      "Political and Legal Forces",
+      "Technological Advances",
+      "Economic Conditions",
+      "Social and Cultural Factors"
+    ],
+    "answer": "Economic Conditions",
+    "citation": "95, 96"
   },
   {
-    type: "true_false",
-    question: "New technologies can lead to new product innovations but not new distribution channels.",
-    answer: false,
-    explanation: "New technologies can lead to new product innovations, more efficient production methods, new distribution channels (e.g., e-commerce), and new ways to promote products.",
-    citation: "38"
+    "type": "multiple_choice",
+    "question": "New technologies can lead to new product innovations but not new distribution channels. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "New technologies can lead to new product innovations, more efficient production methods, new distribution channels (e.g., e-commerce), and new ways to promote products.",
+    "citation": "98"
   },
   {
-    type: "fill_in_the_blank",
-    question: "Government regulations and trade policies are part of Political and _________ Forces.",
-    answer: "Legal",
-    citation: "39, 40"
+    "type": "multiple_choice",
+    "question": "Government regulations and trade policies are part of Political and _________ Forces.",
+    "options": [
+      "Economic",
+      "Social",
+      "Legal",
+      "Environmental"
+    ],
+    "answer": "Legal",
+    "citation": "99, 100"
   },
   {
-    type: "multiple_choice",
-    question: "What type of forces can impact supply chains and consumer preferences for eco-friendly products?",
-    options: [
+    "type": "multiple_choice",
+    "question": "What type of forces can impact supply chains and consumer preferences for eco-friendly products?",
+    "options": [
       "Economic Conditions",
       "Social and Cultural Factors",
       "Natural/Environmental Forces",
       "Technological Advances"
     ],
-    answer: "Natural/Environmental Forces",
-    citation: "41, 42"
+    "answer": "Natural/Environmental Forces",
+    "citation": "101, 102"
   },
   {
-    type: "riddle",
-    question: "I represent the earth's concerns, pushing for green products and affecting your supply. What am I?",
-    answer: "Natural/Environmental Forces",
-    citation: "41, 42"
+    "type": "multiple_choice",
+    "question": "I represent the earth's concerns, pushing for green products and affecting your supply. What am I?",
+    "options": [
+      "Economic Conditions",
+      "Political and Legal Forces",
+      "Natural/Environmental Forces",
+      "Social and Cultural Factors"
+    ],
+    "answer": "Natural/Environmental Forces",
+    "citation": "101, 102"
   },
   {
-    type: "true_false",
-    question: "Competitor actions are an internal factor affecting the marketing mix.",
-    answer: false,
-    explanation: "Competition is an external factor.",
-    citation: "30, 43"
+    "type": "multiple_choice",
+    "question": "Competitor actions are an internal factor affecting the marketing mix. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "Competition is an external factor.",
+    "citation": "90, 103"
   },
   {
-    type: "fill_in_the_blank",
-    question: "Demographics such as age, gender, and income are elements of Social and _________ Factors.",
-    answer: "Cultural",
-    citation: "45"
+    "type": "multiple_choice",
+    "question": "Demographics such as age, gender, and income are elements of Social and _________ Factors.",
+    "options": [
+      "Economic",
+      "Political",
+      "Cultural",
+      "Environmental"
+    ],
+    "answer": "Cultural",
+    "citation": "105"
   },
   {
-    type: "multiple_choice",
-    question: "How do marketing intermediaries like wholesalers and retailers affect the marketing mix?",
-    options: [
+    "type": "multiple_choice",
+    "question": "How do marketing intermediaries like wholesalers and retailers affect the marketing mix?",
+    "options": [
       "By dictating company objectives",
       "By influencing product quality and distribution efficiency",
       "By setting company policies",
       "By determining human resource capabilities"
     ],
-    answer: "By influencing product quality and distribution efficiency",
-    citation: "47"
+    "answer": "By influencing product quality and distribution efficiency",
+    "citation": "107"
   },
   {
-    type: "riddle",
-    question: "I am the middleman, connecting your products to the customers and influencing how smoothly they get there. Who am I?",
-    answer: "Marketing Intermediaries",
-    citation: "47"
+    "type": "multiple_choice",
+    "question": "I am the middleman, connecting your products to the customers and influencing how smoothly they get there. Who am I?",
+    "options": [
+      "Suppliers",
+      "Marketing Intermediaries",
+      "Competitors",
+      "Consumers"
+    ],
+    "answer": "Marketing Intermediaries",
+    "citation": "107"
   },
   {
-    type: "true_false",
-    question: "A key benefit of a well-managed marketing mix is a decrease in brand awareness.",
-    answer: false,
-    explanation: "A well-managed marketing mix helps achieve goals like increasing brand awareness and contributes to a strong brand identity and positive reputation.",
-    citation: "48, 54"
+    "type": "multiple_choice",
+    "question": "A key benefit of a well-managed marketing mix is a decrease in brand awareness. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "A well-managed marketing mix helps achieve goals like increasing brand awareness and contributes to a strong brand identity and positive reputation.",
+    "citation": "108, 114"
   },
   {
-    type: "fill_in_the_blank",
-    question: "A well-designed marketing mix ensures the product is priced appropriately for its perceived _________.",
-    answer: "value",
-    citation: "49"
+    "type": "multiple_choice",
+    "question": "A well-designed marketing mix ensures the product is priced appropriately for its perceived _________.",
+    "options": [
+      "cost",
+      "value",
+      "price",
+      "market"
+    ],
+    "answer": "value",
+    "citation": "109"
   },
   {
-    type: "multiple_choice",
-    question: "What does a company gain by differentiating its offering and executing compelling promotions?",
-    options: [
+    "type": "multiple_choice",
+    "question": "What does a company gain by differentiating its offering and executing compelling promotions?",
+    "options": [
       "Decreased sales",
       "Competitive disadvantage",
       "Customer dissatisfaction",
       "Competitive advantage"
     ],
-    answer: "Competitive advantage",
-    citation: "50"
+    "answer": "Competitive advantage",
+    "citation": "110"
   },
   {
-    type: "riddle",
-    question: "I am the edge you get over your rivals by being unique and promoting effectively. What am I?",
-    answer: "Competitive Advantage",
-    citation: "50"
+    "type": "multiple_choice",
+    "question": "I am the edge you get over your rivals by being unique and promoting effectively. What am I?",
+    "options": [
+      "Market Dominance",
+      "Competitive Advantage",
+      "Brand Loyalty",
+      "Customer Retention"
+    ],
+    "answer": "Competitive Advantage",
+    "citation": "110"
   },
   {
-    type: "true_false",
-    question: "Optimizing resource allocation involves spending without a clear strategy.",
-    answer: false,
-    explanation: "Optimizing resource allocation involves allocating marketing budget and resources efficiently across different activities, focusing on what will yield the best results.",
-    citation: "52"
+    "type": "multiple_choice",
+    "question": "Optimizing resource allocation involves spending without a clear strategy. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "Optimizing resource allocation involves allocating marketing budget and resources efficiently across different activities, focusing on what will yield the best results.",
+    "citation": "112"
   },
   {
-    type: "fill_in_the_blank",
-    question: "The marketing mix framework aids in making informed decisions about product development, pricing, distribution, and communication _________.",
-    answer: "strategies",
-    citation: "53"
+    "type": "multiple_choice",
+    "question": "The marketing mix framework aids in making informed decisions about product development, pricing, distribution, and communication _________.",
+    "options": [
+      "plans",
+      "goals",
+      "strategies",
+      "objectives"
+    ],
+    "answer": "strategies",
+    "citation": "113"
   },
   {
-    type: "multiple_choice",
-    question: "How does a consistent and well-executed marketing mix contribute to brand image?",
-    options: [
+    "type": "multiple_choice",
+    "question": "How does a consistent and well-executed marketing mix contribute to brand image?",
+    "options": [
       "By confusing customers",
       "By creating a negative reputation",
       "By fostering a strong brand identity and positive reputation",
       "By decreasing customer loyalty"
     ],
-    answer: "By fostering a strong brand identity and positive reputation",
-    citation: "54, 55"
+    "answer": "By fostering a strong brand identity and positive reputation",
+    "citation": "114, 115"
   },
   {
-    type: "riddle",
-    question: "I am the positive feeling and recognition customers have for your brand, built by consistent marketing. What am I?",
-    answer: "Strong Brand Identity and Positive Reputation",
-    citation: "54, 55"
+    "type": "multiple_choice",
+    "question": "I am the positive feeling and recognition customers have for your brand, built by consistent marketing. What am I?",
+    "options": [
+      "Customer Loyalty",
+      "Brand Equity",
+      "Strong Brand Identity and Positive Reputation",
+      "Market Penetration"
+    ],
+    "answer": "Strong Brand Identity and Positive Reputation",
+    "citation": "114, 115"
   },
   {
-    type: "true_false",
-    question: "The marketing mix does not help in better sales forecasting.",
-    answer: false,
-    explanation: "The marketing mix helps in better sales forecasting and revenue generation.",
-    citation: "56"
+    "type": "multiple_choice",
+    "question": "The marketing mix does not help in better sales forecasting. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "The marketing mix helps in better sales forecasting and revenue generation.",
+    "citation": "116"
   },
   {
-    type: "fill_in_the_blank",
-    question: "By regularly reviewing and adjusting the marketing mix, businesses can remain agile and responsive to evolving market _________.",
-    answer: "conditions",
-    citation: "57"
+    "type": "multiple_choice",
+    "question": "By regularly reviewing and adjusting the marketing mix, businesses can remain agile and responsive to evolving market _________.",
+    "options": [
+      "demands",
+      "conditions",
+      "trends",
+      "segments"
+    ],
+    "answer": "conditions",
+    "citation": "117"
   },
   {
-    type: "multiple_choice",
-    question: "What is the role of the marketing mix in inter-departmental collaboration?",
-    options: [
+    "type": "multiple_choice",
+    "question": "What is the role of the marketing mix in inter-departmental collaboration?",
+    "options": [
       "To create departmental silos",
       "To hinder communication",
       "To provide a common language and framework for coordination",
       "To encourage isolated decision-making"
     ],
-    answer: "To provide a common language and framework for coordination",
-    citation: "58"
+    "answer": "To provide a common language and framework for coordination",
+    "citation": "118"
   },
   {
-    type: "riddle",
-    question: "I am the shared language that helps your R&D, production, and sales teams work together towards common goals. What am I?",
-    answer: "Clear Communication and Coordination",
-    citation: "58"
+    "type": "multiple_choice",
+    "question": "I am the shared language that helps your R&D, production, and sales teams work together towards common goals. What am I?",
+    "options": [
+      "Organizational Chart",
+      "Company Mission Statement",
+      "Clear Communication and Coordination",
+      "Project Management Software"
+    ],
+    "answer": "Clear Communication and Coordination",
+    "citation": "118"
   },
   {
-    type: "true_false",
-    question: "The marketing mix is a static tool.",
-    answer: false,
-    explanation: "The marketing mix is not a static concept but a dynamic tool that must be constantly evaluated and adjusted.",
-    citation: "59, 60"
+    "type": "multiple_choice",
+    "question": "The marketing mix is a static tool. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "The marketing mix is not a static concept but a dynamic tool that must be constantly evaluated and adjusted.",
+    "citation": "119, 120"
   },
   {
-    type: "fill_in_the_blank",
-    question: "The marketing mix must be constantly evaluated and adjusted in light of a multitude of internal and external _________.",
-    answer: "forces",
-    citation: "60"
+    "type": "multiple_choice",
+    "question": "The marketing mix must be constantly evaluated and adjusted in light of a multitude of internal and external _________.",
+    "options": [
+      "opinions",
+      "factors",
+      "pressures",
+      "variables"
+    ],
+    "answer": "forces",
+    "citation": "120"
   },
   {
-    type: "multiple_choice",
-    question: "Who among the following presented the Entrepreneurship Presentation?",
-    options: [
+    "type": "multiple_choice",
+    "question": "Who among the following presented the Entrepreneurship Presentation?",
+    "options": [
       "Only Garfield Nana Agyekum",
       "A group of members including Ziyaad Labaran and Aida Yussif Zaare",
       "Only Matthew Opare Danso",
       "A single individual named Gabriel Nyantakyi"
     ],
-    answer: "A group of members including Ziyaad Labaran and Aida Yussif Zaare",
-    citation: "3, 4, 5, 6, 7, 8, 9, 10"
+    "answer": "A group of members including Ziyaad Labaran and Aida Yussif Zaare",
+    "citation": "63, 64, 65, 66, 67, 68, 69, 70"
   },
   {
-    type: "true_false",
-    question: "The presentation specifies that the marketing mix focuses only on product development.",
-    answer: false,
-    explanation: "The marketing mix refers to the '4 Ps' namely; Product, Price, Place (Distribution), and Promotion.",
-    citation: "13"
+    "type": "multiple_choice",
+    "question": "The presentation specifies that the marketing mix focuses only on product development. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "The marketing mix refers to the '4 Ps' namely; Product, Price, Place (Distribution), and Promotion.",
+    "citation": "73"
   },
   {
-    type: "fill_in_the_blank",
-    question: "One of the benefits of a well-managed marketing mix is achieving Business _________.",
-    answer: "Objectives",
-    citation: "48"
+    "type": "multiple_choice",
+    "question": "One of the benefits of a well-managed marketing mix is achieving Business _________.",
+    "options": [
+      "Growth",
+      "Targets",
+      "Objectives",
+      "Success"
+    ],
+    "answer": "Objectives",
+    "citation": "108"
   },
   {
-    type: "multiple_choice",
-    question: "Which factor is controllable by the organization?",
-    options: [
+    "type": "multiple_choice",
+    "question": "Which factor is controllable by the organization?",
+    "options": [
       "Competition",
       "Technological Advances",
       "Company Policies",
       "Economic Conditions"
     ],
-    answer: "Company Policies",
-    citation: "15, 18"
+    "answer": "Company Policies",
+    "citation": "75, 78"
   },
   {
-    type: "riddle",
-    question: "I am a factor you can change within your company, like your internal rules. What kind of factor am I?",
-    answer: "Internal Factor (Controllable by the Organization)",
-    citation: "15"
+    "type": "multiple_choice",
+    "question": "I am a factor you can change within your company, like your internal rules. What kind of factor am I?",
+    "options": [
+      "External Factor",
+      "Environmental Factor",
+      "Internal Factor (Controllable by the Organization)",
+      "Market Factor"
+    ],
+    "answer": "Internal Factor (Controllable by the Organization)",
+    "citation": "75"
   },
   {
-    type: "true_false",
-    question: "Customer attitudes and behavior are controllable by the organization.",
-    answer: false,
-    explanation: "Customer attitudes and behavior are external factors (uncontrollable by the organization).",
-    citation: "30, 31, 33"
+    "type": "multiple_choice",
+    "question": "Customer attitudes and behavior are controllable by the organization. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "Customer attitudes and behavior are external factors (uncontrollable by the organization).",
+    "citation": "90, 91, 93"
   },
   {
-    type: "fill_in_the_blank",
-    question: "The marketing mix is referred to as the '4 _________'.",
-    answer: "Ps",
-    citation: "13"
+    "type": "multiple_choice",
+    "question": "The marketing mix is referred to as the '4 _________'.",
+    "options": [
+      "Factors",
+      "Elements",
+      "Ps",
+      "Principles"
+    ],
+    "answer": "Ps",
+    "citation": "73"
   },
   {
-    type: "multiple_choice",
-    question: "What is an example of an external factor that influences pricing strategies during an economic downturn?",
-    options: [
+    "type": "multiple_choice",
+    "question": "What is an example of an external factor that influences pricing strategies during an economic downturn?",
+    "options": [
       "Company Objectives/Goals",
       "Financial Situation/Resources",
       "Economic Conditions",
       "Organizational Structure"
     ],
-    answer: "Economic Conditions",
-    citation: "35, 36"
+    "answer": "Economic Conditions",
+    "citation": "95, 96"
   },
   {
-    type: "riddle",
-    question: "I am the state of the economy, and when I'm down, companies often reconsider their prices. What am I?",
-    answer: "Economic Conditions",
-    citation: "35, 36"
+    "type": "multiple_choice",
+    "question": "I am the state of the economy, and when I'm down, companies often reconsider their prices. What am I?",
+    "options": [
+      "Political Landscape",
+      "Economic Conditions",
+      "Social Norms",
+      "Technological Trends"
+    ],
+    "answer": "Economic Conditions",
+    "citation": "95, 96"
   },
   {
-    type: "true_false",
-    question: "The availability of suppliers is an internal factor affecting the marketing mix.",
-    answer: false,
-    explanation: "Suppliers and Marketing Intermediaries are external factors.",
-    citation: "30, 47"
+    "type": "multiple_choice",
+    "question": "The availability of suppliers is an internal factor affecting the marketing mix. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "Suppliers and Marketing Intermediaries are external factors.",
+    "citation": "90, 107"
   },
   {
-    type: "fill_in_the_blank",
-    question: "A company focused on profit might prioritize premium pricing and product _________.",
-    answer: "differentiation",
-    citation: "17"
+    "type": "multiple_choice",
+    "question": "A company focused on profit might prioritize premium pricing and product _________.",
+    "options": [
+      "volume",
+      "efficiency",
+      "differentiation",
+      "standardization"
+    ],
+    "answer": "differentiation",
+    "citation": "77"
   },
   {
-    type: "multiple_choice",
-    question: "What helps a company achieve long-term sustainability?",
-    options: [
+    "type": "multiple_choice",
+    "question": "What helps a company achieve long-term sustainability?",
+    "options": [
       "Ignoring market changes",
       "A rigid marketing mix",
       "Regularly reviewing and adjusting the marketing mix",
       "Focusing only on internal factors"
     ],
-    answer: "Regularly reviewing and adjusting the marketing mix",
-    citation: "57"
+    "answer": "Regularly reviewing and adjusting the marketing mix",
+    "citation": "117"
   },
   {
-    type: "riddle",
-    question: "I am your secret to staying relevant, constantly evolving your marketing as the world changes. What am I?",
-    answer: "Adaptability to Market Changes (by reviewing and adjusting the marketing mix)",
-    citation: "57"
+    "type": "multiple_choice",
+    "question": "I am your secret to staying relevant, constantly evolving your marketing as the world changes. What am I?",
+    "options": [
+      "Market Research",
+      "Customer Feedback",
+      "Adaptability to Market Changes (by reviewing and adjusting the marketing mix)",
+      "Financial Planning"
+    ],
+    "answer": "Adaptability to Market Changes (by reviewing and adjusting the marketing mix)",
+    "citation": "117"
   },
   {
-    type: "true_false",
-    question: "The marketing mix provides a common language for departments to work in isolation.",
-    answer: false,
-    explanation: "The marketing mix provides a common language and framework for different departments to coordinate their efforts towards shared marketing goals.",
-    citation: "58"
+    "type": "multiple_choice",
+    "question": "The marketing mix provides a common language for departments to work in isolation. True or False?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "The marketing mix provides a common language and framework for different departments to coordinate their efforts towards shared marketing goals.",
+    "citation": "118"
   }
 ];
 
