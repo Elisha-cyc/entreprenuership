@@ -3,57 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketing Mix Quiz</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Entrepreneurship Marketing Mix Quiz</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
-        .quiz-container {
-            max-width: 700px;
+        /* Custom styles for Inter font and general body styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        /* Ensure the quiz container takes full width on small screens and centers on larger screens */
+        #quiz-container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 1rem; /* Rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 2.5rem; /* Increased padding */
+            box-sizing: border-box;
+        }
+        /* Style for options */
+        .option-button {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            margin-bottom: 0.75rem;
+            background-color: #e2e8f0; /* Light gray for options */
+            border-radius: 0.75rem; /* Rounded corners */
+            text-align: left;
+            font-size: 1.125rem; /* Larger text */
+            transition: background-color 0.2s, transform 0.1s;
+            cursor: pointer;
+            border: 2px solid transparent; /* Default border */
+        }
+        .option-button:hover:not(.correct):not(.incorrect) {
+            background-color: #cbd5e1; /* Darker gray on hover */
+            transform: translateY(-2px); /* Slight lift effect */
         }
         .option-button.selected {
-            @apply bg-blue-200 border-blue-500;
+            border-color: #3b82f6; /* Blue border when selected */
+            background-color: #bfdbfe; /* Lighter blue background */
         }
         .option-button.correct {
-            @apply bg-green-200 border-green-500;
+            background-color: #d1fae5; /* Green for correct */
+            border-color: #10b981; /* Green border */
+            color: #065f46; /* Darker green text */
         }
         .option-button.incorrect {
-            @apply bg-red-200 border-red-500;
+            background-color: #fee2e2; /* Red for incorrect */
+            border-color: #ef4444; /* Red border */
+            color: #991b1b; /* Darker red text */
         }
-        .option-button:disabled {
-            cursor: not-allowed;
-            opacity: 0.7;
+        /* Button styles */
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem; /* Rounded corners */
+            font-weight: 600;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+        .btn-primary {
+            background-color: #3b82f6; /* Blue */
+            color: #ffffff;
+        }
+        .btn-primary:hover {
+            background-color: #2563eb; /* Darker blue */
+            transform: translateY(-1px);
+        }
+        .btn-secondary {
+            background-color: #6b7280; /* Gray */
+            color: #ffffff;
+        }
+        .btn-secondary:hover {
+            background-color: #4b5563; /* Darker gray */
+            transform: translateY(-1px);
+        }
+        /* Hide elements initially */
+        #quiz-area, #result-area {
+            display: none;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            #quiz-container {
+                padding: 1.5rem;
+            }
+            .option-button {
+                font-size: 1rem;
+                padding: 0.8rem 1rem;
+            }
+            .btn {
+                padding: 0.6rem 1rem;
+            }
         }
     </style>
 </head>
-<body class="bg-gradient-to-r from-blue-500 to-purple-600 min-h-screen flex items-center justify-center p-4 font-sans">
+<body>
+    <div id="quiz-container" class="flex flex-col items-center">
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-6 text-center">Entrepreneurship Marketing Mix Quiz</h1>
 
-    <div id="quiz-container" class="quiz-container bg-white rounded-lg shadow-xl p-8 w-full">
-        <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Marketing mix Quiz</h1>
-
-        <!-- <div id="timer-display" class="text-xl font-bold text-red-600 text-center mb-4">Time Left: <span id="time-left">20</span>s</div> -->
-
-        <div id="question-display" class="mb-8">
-            <p id="question-number" class="text-lg font-semibold text-gray-600 mb-2"></p>
-            <p id="question-text" class="text-2xl font-bold text-gray-900 mb-6"></p>
-            <div id="options-container" class="space-y-4">
-                </div>
-            <p id="feedback-message" class="text-center mt-4 text-lg font-semibold"></p>
+        <!-- Start Screen -->
+        <div id="start-screen" class="text-center">
+            <p class="text-lg text-gray-700 mb-8">Test your knowledge on the Marketing Mix, its internal and external factors, and benefits.</p>
+            <button id="start-quiz-btn" class="btn btn-primary text-xl px-8 py-4">Start Quiz</button>
         </div>
 
-        <div class="flex justify-end items-center mt-6">
-            <button id="next-button" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg shadow-md transition duration-300 ease-in-out">Next Question</button>
-            <button id="submit-button" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg shadow-md transition duration-300 ease-in-out hidden">Submit Quiz</button>
+        <!-- Quiz Area -->
+        <div id="quiz-area" class="w-full">
+            <div class="flex justify-between items-center mb-6">
+                <p class="text-lg font-semibold text-gray-800">Question <span id="current-question-number">1</span> of <span id="total-questions">100</span></p>
+                <!-- Removed Time Display -->
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg mb-6 shadow-inner">
+                <p id="question-text" class="text-2xl font-bold text-gray-900"></p>
+            </div>
+
+            <div id="options-container" class="grid grid-cols-1 gap-4 mb-8">
+                <!-- Options will be dynamically loaded here -->
+            </div>
+
+            <div class="flex justify-between">
+                <button id="previous-btn" class="btn btn-secondary" disabled>Previous</button>
+                <button id="next-btn" class="btn btn-primary">Next</button>
+                <button id="submit-quiz-btn" class="btn btn-primary" style="display: none;">Submit Quiz</button>
+            </div>
+            <!-- Message box for user feedback -->
+            <div id="message-box" class="mt-4 p-3 rounded-lg text-center font-medium" style="display: none;"></div>
         </div>
 
-        <div id="final-result-container" class="mt-8 p-6 bg-gray-100 rounded-lg hidden">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">Quiz Results</h2>
-            <p id="final-score-text" class="text-xl text-gray-700 mb-2"></p>
-            <div id="final-feedback-details" class="space-y-4">
-                </div>
-            <button id="restart-button" class="mt-6 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-lg shadow-md transition duration-300 ease-in-out">Restart Quiz</button>
+        <!-- Result Area -->
+        <div id="result-area" class="w-full text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Quiz Complete!</h2>
+            <p class="text-xl text-gray-700 mb-6">Your Score: <span id="final-score" class="font-extrabold text-blue-600"></span> / <span id="total-questions-result">100</span></p>
+            <button id="restart-quiz-btn" class="btn btn-primary text-lg px-6 py-3">Restart Quiz</button>
         </div>
     </div>
 
-    <script src="script.js"></script>
+       <script src="script.js"></script>
+
 </body>
 </html>
