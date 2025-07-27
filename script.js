@@ -731,7 +731,7 @@
     const messageBox = document.getElementById('message-box');
 
     // Initialize total questions display
-    totalQuestionsSpan.textContent = questions.length;
+    totalQuestionsSpan.textContent = questions.length - 40;
     totalQuestionsResultSpan.textContent = questions.length;
 
     /**
